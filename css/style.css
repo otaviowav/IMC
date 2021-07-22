@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 * {
     padding: 0;
@@ -15,7 +16,7 @@ body, input {
 body {
     margin: 0;
     height: 100vh;
-    padding: 0;
+    padding-top: 5vh;
     border: 0;
     background: linear-gradient(to bottom right,  #F1F2B5, #eef2f3);
     background-image: url(../img/workout.jpg);
@@ -25,7 +26,7 @@ body {
   .form {
     background-color: #fff;
     height: 240px;
-    width: 450px;
+    width: 480px;
     border-radius: 20px;
     margin: 20px auto 20px auto;
     display: block;
@@ -36,7 +37,7 @@ body {
   .form:hover {
     box-shadow: 0 0 60px 0 rgb(76, 76, 76);
     transition: .7s;
-    transform: scale(1.10);
+    transform: scale(1.02);
   }
   
   .row-one {
@@ -48,7 +49,7 @@ body {
   }
   
   .text-input {
-    width: 60px;
+    width: 75px;
     height: 30px;
     border-radius: 10px;
     background-color: #dbeffe;
@@ -73,15 +74,36 @@ body {
     width: 140px;
     background-color: #289df6;
     color: #fff;
-    margin: auto;
-    display: block;
+    display: inline-block;
+    margin-left: 98px;
+    margin-right: auto;
     outline: none;
     cursor: pointer;
+    transition: .3s;
   }
-  
+
+  #limpar {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color: #ff7979;
+    color: #fff;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+
   #submit:hover{
-    background-color: #0a8ef2;
+    background-color: #0573c7;
   }
+
+  #limpar:hover{
+    background-color: #ff3e3e;
+  }  
   
   .text {
     display: inline-block;
@@ -127,26 +149,28 @@ body {
   }
   
   h1 {
-    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 50px;
     font-weight: 300;
     text-align: center;
-    color: #289df6;
-    padding-top: 15px;
+    color: #000000;
+    padding-top: 10px;
     display: block;
   }
   
   h2 {
+    font-family: 'Patrick Hand', cursive;
     font-size: 50px;
     font-weight: 300;
     text-align: center;
+    padding: 10px;
   }
   
   h3 {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Patrick Hand', cursive;
     font-size: 80px;
     font-weight: 300;
     text-align: center;
-    padding: 15px;
   }
   
   h3 b {
@@ -174,3 +198,39 @@ body {
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+
+  /* @media (max-width: 570px) {
+
+    body {
+      margin: 0;
+      height: 100vh;
+      padding-top: 5vh;
+      border: 0;
+      background: linear-gradient(to bottom right,  #F1F2B5, #eef2f3);
+      background-image: url(../img/workout.jpg);
+      background-position: center;
+    transition: 0.9s 0.6s ease-in;
+    }
+    
+    form {
+      background-color: #fff;
+      height: 240px;
+      width: 480px;
+      border-radius: 20px;
+      margin: 20px auto 20px auto;
+      display: block;
+      border: solid 1px #289df6;
+      box-shadow: 0 0 40px 0 #ddd;
+    }
+
+    h3 {
+      font-family: 'Patrick Hand', cursive;
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin-left: 40%;
+    }
+
+
+  } */
+
